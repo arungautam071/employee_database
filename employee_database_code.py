@@ -20,7 +20,7 @@ class Employee(models.Model):
     e_department= models.ForeignKey(Department, on_delete=models.CASCADE)
 
 
-
+#M2M relation between employee and project.
 class Project(models.Model):
     p_number = models.IntegerField(max_length=30)
     p_name = models.CharField(max_length=30)
